@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Đông Nghi ✦ My Space</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #0f1020, #1d1640, #321c55);
+      color: white;
+      line-height: 1.6;
+    }
+
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      padding: 18px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: rgba(15, 16, 32, 0.7);
+      backdrop-filter: blur(15px);
+      z-index: 1000;
+    }
+
+    .logo {
+      font-size: 22px;
+      font-weight: bold;
+      color: #d9b8ff;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 25px;
+      transition: .3s;
+    }
+
+    nav a:hover {
+      color: #d9b8ff;
+    }
+
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 100px 20px;
+    }
+
+    .hero-content {
+      max-width: 800px;
+    }
+
+    .avatar {
+      width: 140px;
+      height: 140px;
+      margin: auto auto 25px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #a855f7, #6366f1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 55px;
+      box-shadow: 0 0 50px rgba(168, 85, 247, .5);
+    }
+
+    h1 {
+      font-size: clamp(45px, 8vw, 80px);
+      margin-bottom: 10px;
+    }
+
+    .gradient {
+      background: linear-gradient(90deg, #c084fc, #818cf8, #f0abfc);
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+
+    .hero p {
+      color: #d5d1e8;
+      font-size: 19px;
+      margin: 20px auto 30px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 13px 25px;
+      border-radius: 30px;
+      background: linear-gradient(90deg, #8b5cf6, #6366f1);
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: .3s;
+      box-shadow: 0 8px 30px rgba(99, 102, 241, .3);
+    }
+
+    .button:hover {
+      transform: translateY(-4px);
+    }
+
+    section {
+      padding: 90px 8%;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 38px;
+      margin-bottom: 45px;
+    }
+
+    .card-container {
+      max-width: 1000px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 22px;
+    }
+
+    .card {
+      padding: 28px;
+      border-radius: 22px;
+      background: rgba(255,255,255,.08);
+      border: 1px solid rgba(255,255,255,.12);
+      backdrop-filter: blur(12px);
+      transition: .3s;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      background: rgba(255,255,255,.13);
+    }
+
+    .card h3 {
+      color: #d8b4fe;
+      margin-bottom: 10px;
+    }
+
+    .about {
+      max-width: 850px;
+      margin: auto;
+      text-align: center;
+      color: #ddd8ed;
+      font-size: 18px;
+    }
+
+    .contact {
+      text-align: center;
+    }
+
+    .socials {
+      margin-top: 25px;
+    }
+
+    .socials a {
+      display: inline-block;
+      margin: 8px;
+      padding: 12px 18px;
+      border-radius: 20px;
+      background: rgba(255,255,255,.1);
+      color: white;
+      text-decoration: none;
+      transition: .3s;
+    }
+
+    .socials a:hover {
+      background: #8b5cf6;
+      transform: translateY(-3px);
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      color: #aaa5bd;
+      border-top: 1px solid rgba(255,255,255,.1);
+    }
+
+    @media (max-width: 650px) {
+      nav {
+        padding: 15px 5%;
+      }
+
+      nav a {
+        margin-left: 10px;
+        font-size: 13px;
+      }
+
+      section {
+        padding: 70px 5%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav>
+    <div class="logo">✦ Nghi's Space</div>
+
+    <div>
+      <a href="#about">About</a>
+      <a href="#hobbies">Hobbies</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-content">
+
+      <div class="avatar">✦</div>
+
+      <h1>
+        Hi, I'm <span class="gradient">Đông Nghi</span> ♡
+      </h1>
+
+      <p>
+        Welcome to my little corner of the internet.
+        Đây là nơi mình lưu lại những điều mình thích,
+        những thứ mình đang làm và một chút về bản thân mình.
+      </p>
+
+      <a class="button" href="#about">Khám phá mình ↓</a>
+
+    </div>
+  </section>
+
+  <section id="about">
+
+    <h2 class="section-title">About Me ✦</h2>
+
+    <div class="about">
+      <p>
+        Xin chào! Mình là <b>Đông Nghi</b>.
+        Mình đang học tập, khám phá những điều mới
+        và muốn biến những ý tưởng của mình thành những thứ thật thú vị.
+      </p>
+
+      <br>
+
+      <p>
+        Website này là một góc nhỏ để mình giới thiệu bản thân
+        và lưu lại những điều mình yêu thích.
+      </p>
+    </div>
+
+  </section>
+
+  <section id="hobbies">
+
+    <h2 class="section-title">Things I Like ♡</h2>
+
+    <div class="card-container">
+
+      <div class="card">
+        <h3>🎧 Music</h3>
+        <p>Những bài hát mình nghe mỗi ngày và những nghệ sĩ mình yêu thích.</p>
+      </div>
+
+      <div class="card">
+        <h3>🎨 Creative</h3>
+        <p>Thiết kế, sáng tạo và thử những thứ mới.</p>
+      </div>
+
+      <div class="card">
+        <h3>🎮 Games</h3>
+        <p>Những tựa game giúp mình giải trí sau giờ học.</p>
+      </div>
+
+      <div class="card">
+        <h3>📸 Memories</h3>
+        <p>Lưu lại những khoảnh khắc đáng nhớ.</p>
+      </div>
+
+    </div>
+
+  </section>
+
+  <section id="skills">
+
+    <h2 class="section-title">My Skills ✦</h2>
+
+    <div class="card-container">
+
+      <div class="card">
+        <h3>💻 Technology</h3>
+        <p>Đang học cách tạo website và khám phá công nghệ.</p>
+      </div>
+
+      <div class="card">
+        <h3>✨ Creativity</h3>
+        <p>Thích nghĩ ra những ý tưởng và biến chúng thành sản phẩm.</p>
+      </div>
+
+      <div class="card">
+        <h3>📚 Learning</h3>
+        <p>Luôn muốn học thêm những điều mới.</p>
+      </div>
+
+    </div>
+
+  </section>
+
+  <section id="contact" class="contact">
+
+    <h2 class="section-title">Let's Connect ♡</h2>
+
+    <p>Nếu muốn tìm mình thì ghé qua đây nha!</p>
+
+    <div class="socials">
+      <a href="https://github.com/dnghii1009" target="_blank">GitHub</a>
+      <a href="#" target="_blank">Instagram</a>
+      <a href="#" target="_blank">TikTok</a>
+    </div>
+
+  </section>
+
+  <footer>
+    Made with ♡ by Đông Nghi
+  </footer>
+
+</body>
+</html>
